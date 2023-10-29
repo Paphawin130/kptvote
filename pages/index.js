@@ -1,4 +1,3 @@
-"use server";
 import Image from "next/image";
 import axios from "axios";
 
