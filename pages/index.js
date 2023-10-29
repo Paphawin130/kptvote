@@ -27,14 +27,14 @@ function Home() {
       </div>
       <br></br>
       <div className="carousel-root max-h-[360px] w-full rounded-3xl shadow-lg overflow-hidden mb-6 md:mb-12 hover:cursor-pointer" data-aos="fade-down">
-     // <div className="flex rounded-xl overflow-hidden shadow-lg text-sm sm:text-base" data-aos="fade-down">
-       // <p class="bg-gradient-to-tr from-purple-500 to-purple-300 px-5 py-2 text-white whitespace-nowrap" data-aos="fade-down">
-        //  <span class="hidden sm:inline-flex" data-aos="fade-down">ประกาศ</span>ข่าวสาร
-       // </p>
+      <div className="flex rounded-xl overflow-hidden shadow-lg text-sm sm:text-base" data-aos="fade-down">
+     {/*   <p class="bg-gradient-to-tr from-purple-500 to-purple-300 px-5 py-2 text-white whitespace-nowrap" data-aos="fade-down">
+          <span class="hidden sm:inline-flex" data-aos="fade-down">ประกาศ</span>ข่าวสาร
+       </p>*/}
         <marquee class="bg-white py-2">
           หากพบปัญหา สามารถแจ้งเข้ามาได้ที่ชมรม Coding
         </marquee>
-      //</div>
+      </div>
       </div>
       
      
