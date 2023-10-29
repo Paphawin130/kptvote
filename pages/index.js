@@ -4,9 +4,9 @@ import axios from "axios";
 
 function Home() {
   const Users = 1;
-  const Items = 1;
-  const Topups = 1;
-  const Historys = 1;
+  const Items = 6;
+  const Topups = 8;
+  const Historys = 0;
   return (
     <main className="w-full container text-center min-h-screen text-purple-400 ">
       <h1 class="text-5xl w-fit font-bold text-purple-400 -skew-x-12 tracking-tighter">Kornpitack</h1>
