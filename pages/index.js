@@ -10,7 +10,7 @@ function Home(props) {
     <main className="w-full container text-center min-h-screen text-purple-400 ">
       <div data-aos="fade-down" data-aos-duration="800">
         <h1 class="text-5xl w-fit font-bold text-purple-400 -skew-x-12 tracking-tighter">
-          Kornpitack
+          Kornpitack eSports
         </h1>
       </div>
       {/* <h1 className="md:w-1/2 text-4xl sm:text-5xl md:text-6xl font-bold text-transparent bg-clip-text bg-gradient-to-t from-blue-500 to-blue-300 nsys_fadeIn mb-6 md:mb-0"></h1> */}
