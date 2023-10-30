@@ -2,8 +2,8 @@ import Image from "next/image";
 import axios from "axios";
 
 function Home(props) {
-  const Users = 1
-  const Items = 6
+  const Users = 8
+  const Items = 8
   const Topups = 8
   const Historys = 8
   return (
