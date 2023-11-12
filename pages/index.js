@@ -9,8 +9,9 @@ function Home(props) {
   const Topups = "1,000";
   const Historys = "12:03:32";
   return (
-    <main className="w-full container text-center min-h-screen text-black-400 ">
+    <main className="bg-pink-50 w-full container text-center min-h-screen text-black-400 ">
       <div data-aos="fade-down" data-aos-duration="800">
+        <br></br>
         <h1 className="text-5xl w-fit font-bold text-pink-400 -skew-x-12 tracking-tighter">
           Kornpitack Esports
         </h1>
@@ -28,9 +29,15 @@ function Home(props) {
         ></img>
       </div>
       <br></br>
-      <div  data-aos="fade-down" className="flex rounded-xl overflow-hidden shadow-lg text-sm sm:text-base">
+      <div
+        data-aos="fade-down"
+        className="w-full flex rounded-xl overflow-hidden shadow-lg text-sm sm:text-base"
+      >
         <p className="bg-gradient-to-tr from-blue-500 to-blue-300 px-4 py-2 text-white whitespace-nowrap">
-          <span data-aos="fade-down" class="hidden sm:inline-flex">อัพเดต</span>"ข่าวสาร"
+          <span data-aos="fade-down" class="hidden sm:inline-flex">
+            อัพเดต
+          </span>
+          "ข่าวสาร"
         </p>
         <marquee data-aos="fade-down" class="bg-white py-2">
           หากพบปัญหา สามารถแจ้งเข้ามาได้ที่ชมรม Coding หรือหัวหน้าระดับ
