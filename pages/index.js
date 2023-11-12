@@ -2,7 +2,6 @@
 import Image from "next/image";
 import axios from "axios";
 import { TypeAnimation } from "react-type-animation";
-import { Carousel } from "react-responsive-carousel";
 
 function Home(props) {
   const Users = "5";
