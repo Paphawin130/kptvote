@@ -2,6 +2,7 @@
 import Image from "next/image";
 import axios from "axios";
 import { TypeAnimation } from "react-type-animation";
+import { Carousel } from "react-responsive-carousel";
 
 function Home(props) {
   const Users = "5";
@@ -19,15 +20,13 @@ function Home(props) {
         className="grid pt-3 d-flex justify-content-center"
         data-aos="zoom-in"
       >
-        <center>
-          <img
-            className="img-fluid rounded-top-lg"
-            src="https://www.kornpitack.ac.th/admin/index_page/file/1/0001.png"
-            alt="banner"
-            // width="1900"
-            // height="1900"
-          ></img>
-        </center>
+        <img
+          className="img-fluid rounded-top-lg"
+          src="https://www.kornpitack.ac.th/admin/index_page/file/1/0001.png"
+          alt="banner"
+          // width="1900"
+          // height="1900"
+        ></img>
       </div>
       <br></br>
       <div
@@ -116,16 +115,13 @@ function Home(props) {
                 src="https://images.alphacoders.com/128/thumb-1920-1282982.jpg"
                 alt="card_image"
                 data-aos="fade-up"
-                width="1000"
-                height="1000"
+                // width="1000"
+                // height="1000"
               ></img>
             </div>
             <br></br>
             <br></br>
-            <h1
-              className="text-3xl font-bold text-black"
-              data-aos="fade-down"
-            >
+            <h1 className="text-3xl font-bold text-black" data-aos="fade-down">
               Valorant&nbsp;{Topups} คน
             </h1>
           </div>
@@ -134,22 +130,24 @@ function Home(props) {
             data-aos="fade-up"
             data-aos-duration="800"
           >
+             <div
+              className="grid pt-3  justify-content-center"
+              data-aos="zoom-in"
+            >
             <img
               class="img-fluid rounded-top-lg object-cover" // w-[400px] h-[200px]
               src="https://images.alphacoders.com/128/thumb-1920-1282982.jpg"
               alt="card_image"
               data-aos="fade-up"
-              width="1000"
-              height="1000"
+              // width="1000"
+              // height="1000"
             ></img>
             <br></br>
             <br></br>
-            <h1
-              className="text-3xl font-bold text-black"
-              data-aos="fade-down"
-            >
+            <h1 className="text-3xl font-bold text-black" data-aos="fade-down">
               Valorant&nbsp;{Topups} คน
             </h1>
+          </div>
           </div>
         </div>
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 gap-x-4 text-black-500 justify-center text-center pt-7 px-5">
@@ -167,16 +165,13 @@ function Home(props) {
                 src="https://images.alphacoders.com/128/thumb-1920-1282982.jpg"
                 alt="card_image"
                 data-aos="fade-up"
-                width="1000"
-                height="1000"
+                // width="1000"
+                // height="1000"
               ></img>
             </div>
             <br></br>
             <br></br>
-            <h1
-              className=" text-3xl font-bold text-black"
-              data-aos="fade-down"
-            >
+            <h1 className=" text-3xl font-bold text-black" data-aos="fade-down">
               Overwatch 2&nbsp;{Topups} คน
             </h1>
           </div>
@@ -185,6 +180,10 @@ function Home(props) {
             data-aos="fade-up"
             data-aos-duration="800"
           >
+            <div
+              className="grid pt-3  justify-content-center"
+              data-aos="zoom-in"
+            >
             <img
               class="img-fluid rounded-top-lg object-cover" // w-[400px] h-[200px]
               src="https://images.alphacoders.com/128/thumb-1920-1282982.jpg"
@@ -195,13 +194,11 @@ function Home(props) {
             ></img>
             <br></br>
             <br></br>
-            <h1
-              className=" text-3xl font-bold text-black"
-              data-aos="fade-down"
-            >
+            <h1 className=" text-3xl font-bold text-black" data-aos="fade-down">
               Valorant&nbsp;{Topups} คน
             </h1>
           </div>
+        </div>
         </div>
       </div>
       <br></br>
