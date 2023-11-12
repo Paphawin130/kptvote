@@ -99,7 +99,7 @@ export const NavbarComponent = () => {
           <Navbar key={expand} bg="white" expand={expand} className="align-top">
             <br></br>
             <Container fluid>
-              <Link href="/home" style={{ justifyContent: "center", alignItems: "center", minHeight: "100vh" }} >
+              <Link href="/home"  >
                 <img
                   src="https://www.kornpitack.ac.th/img/logo.png"
                   width="60"
