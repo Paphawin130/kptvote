@@ -2,7 +2,7 @@
 @import url(https://fonts.googleapis.com/css?family=Silkscreen:bold);
 
 * {
-  font-weight: 400 !important
+  font-weight: 400 !important;
 }
 
 *,
@@ -13,16 +13,19 @@ h4,
 h5,
 p,
 span {
-  font-family: Kanit, sans-serif
+  font-family: Kanit, sans-serif;
 }
 
 body,
+root {
+  background-color: #FFF3FD;
+}
 html {
-  background-color: #ffffff;
+  background-color: #FFF3FD;
 }
 
 #__next {
-  background-color: #ffffff;
+  background-color: #FFF3FD;
 }
 
 .btn-hakko2 {
@@ -63,7 +66,7 @@ a:active {
 }
 
 .banner-home {
-  background: #ffffff;
+  background-color: #FFF3FD;
   background-position: 0% 25%;
   background-size: cover !important;
   padding: 35px;
@@ -75,13 +78,14 @@ a:active {
 }
 
 .button-62 {
-  background: linear-gradient(to bottom right, #EF4765, #FF9A5A);
+  background: linear-gradient(to bottom right, #ef4765, #ff9a5a);
   border: 0;
   border-radius: 12px;
-  color: #FFFFFF;
+  color: #ffffff;
   cursor: pointer;
   display: inline-block;
-  font-family: -apple-system, system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  font-family: -apple-system, system-ui, "Segoe UI", Roboto, Helvetica, Arial,
+    sans-serif;
   font-size: 16px;
   font-weight: 500;
   line-height: 2.5;
@@ -89,7 +93,7 @@ a:active {
   padding: 0 1rem;
   text-align: center;
   text-decoration: none;
-  transition: box-shadow .2s ease-in-out;
+  transition: box-shadow 0.2s ease-in-out;
   user-select: none;
   -webkit-user-select: none;
   touch-action: manipulation;
@@ -97,17 +101,20 @@ a:active {
 }
 
 .button-62:not([disabled]):hover {
-  box-shadow: 0 0 .25rem rgba(0, 0, 0, 0.5), -.125rem -.125rem 1rem rgba(239, 71, 101, 0.5), .125rem .125rem 1rem rgba(255, 154, 90, 0.5);
+  box-shadow: 0 0 0.25rem rgba(0, 0, 0, 0.5),
+    -0.125rem -0.125rem 1rem rgba(239, 71, 101, 0.5),
+    0.125rem 0.125rem 1rem rgba(255, 154, 90, 0.5);
 }
 
 .button-62-success {
   background: linear-gradient(to bottom right, #47ef63, #5affe4);
   border: 0;
   border-radius: 12px;
-  color: #FFFFFF;
+  color: #ffffff;
   cursor: pointer;
   display: inline-block;
-  font-family: -apple-system, system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  font-family: -apple-system, system-ui, "Segoe UI", Roboto, Helvetica, Arial,
+    sans-serif;
   font-size: 16px;
   font-weight: 500;
   line-height: 2.5;
@@ -115,7 +122,7 @@ a:active {
   padding: 0 1rem;
   text-align: center;
   text-decoration: none;
-  transition: box-shadow .2s ease-in-out;
+  transition: box-shadow 0.2s ease-in-out;
   user-select: none;
   -webkit-user-select: none;
   touch-action: manipulation;
@@ -123,7 +130,9 @@ a:active {
 }
 
 .button-62-success:not([disabled]):hover {
-  box-shadow: 0 0 .25rem rgba(0, 0, 0, 0.5), -.125rem -.125rem 1rem rgba(34, 233, 77, 0.5), .125rem .125rem 1rem rgba(28, 142, 248, 0.5);
+  box-shadow: 0 0 0.25rem rgba(0, 0, 0, 0.5),
+    -0.125rem -0.125rem 1rem rgba(34, 233, 77, 0.5),
+    0.125rem 0.125rem 1rem rgba(28, 142, 248, 0.5);
 }
 
 .button-87 {
@@ -139,7 +148,12 @@ a:active {
   border: 0px;
   font-weight: 700;
   box-shadow: 0px 0px 14px -7px #f09819;
-  background-image: linear-gradient(45deg, #FF512F 0%, #F09819 51%, #FF512F 100%);
+  background-image: linear-gradient(
+    45deg,
+    #ff512f 0%,
+    #f09819 51%,
+    #ff512f 100%
+  );
   cursor: pointer;
   user-select: none;
   -webkit-user-select: none;
@@ -160,11 +174,13 @@ a:active {
 .linear-wipe {
   font-family: Silkscreen;
   font-size: 68px;
-  background: linear-gradient(to right,
-      rgb(187, 62, 255) 20%,
-      rgb(255, 73, 91) 40%,
-      rgb(255, 255, 0) 60%,
-      rgb(56, 156, 255) 80%);
+  background: linear-gradient(
+    to right,
+    rgb(187, 62, 255) 20%,
+    rgb(255, 73, 91) 40%,
+    rgb(255, 255, 0) 60%,
+    rgb(56, 156, 255) 80%
+  );
   background-size: 200% auto;
 
   color: #000;
@@ -185,7 +201,16 @@ a:active {
 }
 
 .banner {
-  background: linear-gradient(331deg, rgb(255 255 255), rgb(0, 0, 0) 0, rgba(0, 0, 0, 0.63) 14%, rgba(0, 0, 0, 0.56) 39%, #000000), url(https://cdn.discordapp.com/attachments/1031270568890208366/1065523320646279219/2679628.jpg) !important;
+  background-color: #FFF3FD;
+  /* background: linear-gradient(
+      331deg,
+      rgb(255 255 255),
+      rgb(0, 0, 0) 0,
+      rgba(0, 0, 0, 0.63) 14%,
+      rgba(0, 0, 0, 0.56) 39%,
+      #000000
+    ),
+    url(https://cdn.discordapp.com/attachments/1031270568890208366/1065523320646279219/2679628.jpg) !important; */
   background-position: 0% 25%;
   background-size: cover !important;
   padding: 200px;
@@ -193,7 +218,7 @@ a:active {
 }
 
 .blur-navbar {
-  background: rgba(255, 255, 255, 0.1);
+  background-color: rgb(243 244 246);
   border-radius: 30px;
   backdrop-filter: blur(8px) brightness(200%);
   font-weight: 300;
@@ -232,7 +257,7 @@ a:active {
 }
 
 .to-pink-400 {
-  --tw-gradient-to: #e879f9
+  --tw-gradient-to: #e879f9;
 }
 
 .form-main-600 {
@@ -271,111 +296,109 @@ a:active {
   animation-duration: 10s, 3s;
   animation-timing-function: linear, ease-in-out;
   animation-iteration-count: infinite, infinite;
-  animation-play-state: running, running
+  animation-play-state: running, running;
 }
 
 @-webkit-keyframes snowflakes-fall {
   0% {
-    top: -10%
+    top: -10%;
   }
 
   100% {
-    top: 100%
+    top: 100%;
   }
 }
 
 @-webkit-keyframes snowflakes-shake {
-
   0%,
   100% {
     -webkit-transform: translateX(0);
-    transform: translateX(0)
+    transform: translateX(0);
   }
 
   50% {
     -webkit-transform: translateX(80px);
-    transform: translateX(80px)
+    transform: translateX(80px);
   }
 }
 
 @keyframes snowflakes-fall {
   0% {
-    top: -10%
+    top: -10%;
   }
 
   100% {
-    top: 100%
+    top: 100%;
   }
 }
 
 @keyframes snowflakes-shake {
-
   0%,
   100% {
-    transform: translateX(0)
+    transform: translateX(0);
   }
 
   50% {
-    transform: translateX(80px)
+    transform: translateX(80px);
   }
 }
 
 .snowflake:nth-of-type(0) {
   left: 1%;
   -webkit-animation-delay: 0s, 0s;
-  animation-delay: 0s, 0s
+  animation-delay: 0s, 0s;
 }
 
 .snowflake:first-of-type {
   left: 10%;
   -webkit-animation-delay: 1s, 1s;
-  animation-delay: 1s, 1s
+  animation-delay: 1s, 1s;
 }
 
 .snowflake:nth-of-type(2) {
   left: 20%;
-  -webkit-animation-delay: 6s, .5s;
-  animation-delay: 6s, .5s
+  -webkit-animation-delay: 6s, 0.5s;
+  animation-delay: 6s, 0.5s;
 }
 
 .snowflake:nth-of-type(3) {
   left: 30%;
   -webkit-animation-delay: 4s, 2s;
-  animation-delay: 4s, 2s
+  animation-delay: 4s, 2s;
 }
 
 .snowflake:nth-of-type(4) {
   left: 40%;
   -webkit-animation-delay: 2s, 2s;
-  animation-delay: 2s, 2s
+  animation-delay: 2s, 2s;
 }
 
 .snowflake:nth-of-type(5) {
   left: 50%;
   -webkit-animation-delay: 8s, 3s;
-  animation-delay: 8s, 3s
+  animation-delay: 8s, 3s;
 }
 
 .snowflake:nth-of-type(6) {
   left: 60%;
   -webkit-animation-delay: 6s, 2s;
-  animation-delay: 6s, 2s
+  animation-delay: 6s, 2s;
 }
 
 .snowflake:nth-of-type(7) {
   left: 70%;
   -webkit-animation-delay: 2.5s, 1s;
-  animation-delay: 2.5s, 1s
+  animation-delay: 2.5s, 1s;
 }
 
 .snowflake:nth-of-type(8) {
   left: 80%;
   -webkit-animation-delay: 1s, 0s;
-  animation-delay: 1s, 0s
+  animation-delay: 1s, 0s;
 }
 
 .snowflake:nth-of-type(9) {
   left: 90%;
   -webkit-animation-delay: 3s, 1.5s;
-  animation-delay: 3s, 1.5s
+  animation-delay: 3s, 1.5s;
 }
