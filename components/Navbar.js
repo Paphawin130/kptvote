@@ -49,125 +49,77 @@ export const NavbarComponent = () => {
       },
     });
   };
-  useEffect(() => {
-    async function checkToken() {
-      if (!localStorage.getItem("token")) {
-        console.log("You don't have a token");
-        deleteCookie("token");
-        return;
-      }
-      axios({
-        method: "GET",
-        url: "http://localhost:8080/apiV1/user/authentication",
-        headers: {
-          Authorization: `Bearer ${localStorage.getItem("token")}`,
-        },
-      })
-        .then((res) => {
-          if (res.status == 200) {
-            setAuthentication(true);
-            setUsername(res.data.data.data.username);
-            setPoint(res.data.data.data.point);
-            setRank(res.data.data.data.Stats);
-            setCookie("token", localStorage.getItem("token"));
-            localStorage.setItem("username", res.data.data.data.username);
-          }
-        })
-        .catch((err) => {
-          if (err.status == 401) {
-            console.log("User unauthorized");
-            if (localStorage.getItem("token") != "") {
-              localStorage.removeItem("token");
-              deleteCookie("token");
-            }
-          } else {
-            localStorage.removeItem("token");
-            deleteCookie("token");
-          }
-          setAuthentication(false);
-          setUsername("Guest");
-        });
-    }
-    checkToken();
-  });
+  // useEffect(() => {
+  //   async function checkToken() {
+  //     if (!localStorage.getItem("token")) {
+  //       console.log("You don't have a token");
+  //       deleteCookie("token");
+  //       return;
+  //     }
+  //     axios({
+  //       method: "GET",
+  //       url: "http://localhost:8080/apiV1/user/authentication",
+  //       headers: {
+  //         Authorization: `Bearer ${localStorage.getItem("token")}`,
+  //       },
+  //     })
+  //       .then((res) => {
+  //         if (res.status == 200) {
+  //           setAuthentication(true);
+  //           setUsername(res.data.data.data.username);
+  //           setPoint(res.data.data.data.point);
+  //           setRank(res.data.data.data.Stats);
+  //           setCookie("token", localStorage.getItem("token"));
+  //           localStorage.setItem("username", res.data.data.data.username);
+  //         }
+  //       })
+  //       .catch((err) => {
+  //         if (err.status == 401) {
+  //           console.log("User unauthorized");
+  //           if (localStorage.getItem("token") != "") {
+  //             localStorage.removeItem("token");
+  //             deleteCookie("token");
+  //           }
+  //         } else {
+  //           localStorage.removeItem("token");
+  //           deleteCookie("token");
+  //         }
+  //         setAuthentication(false);
+  //         setUsername("Guest");
+  //       });
+  //   }
+  //   checkToken();
+  // });
   if (!Authentication) {
     return (
-      
+      <>
         <Script src="https://code.jquery.com/jquery-3.6.3.min.js" />
         <Script src="https://cdn.jsdelivr.net/npm/sweetalert2@11" />
         {[false].map((expand) => (
-          <Navbar key={expand} bg="white" expand={expand} className="align-top">
-            <br></br>
-            <Container fluid>
-              <Link href="/home"  >
-                <img
-                  src="https://www.kornpitack.ac.th/img/logo.png"
-                  width="60"
-                  height="60"
-                  className="d-inline-block items-center center align-top"
-                  alt="Logo"
-                />
-              </Link>
-              {/* <Navbar.Toggle
-                aria-controls={`offcanvasNavbar-expand-${expand}`}
-                className="bg-white text-dark"
-              /> */}
-             
-              <Link
-                href="/login"
-                className="mdi mdi-login bg-gradient-to-t from-purple-500 to-purple-300 text-white p-2 rounded-md shadow-md transition duration-300 hover:-translate-y-1 hover:shadow-lg"
-              >
-                <i className="mdi mdi-login"></i>
-               {""} เข้าสู่ระบบ
-              </Link>
-              {/* <Form className="d-flex">
-                    <Form.Control
-                      type="search"
-                      placeholder="Search"
-                      className="me-2"
-                      aria-label="Search"
-                    />
-                    <Button variant="outline-success">Search</Button>
-                  </Form> */}
-              <Navbar.Offcanvas
-                id={`offcanvasNavbar-expand-${expand}`}
-                aria-labelledby={`offcanvasNavbarLabel-expand-${expand}`}
-                placement="start"
-                className="text-white"
-              >
-                <Offcanvas.Header closeButton>
-                  <Offcanvas.Title id={`offcanvasNavbarLabel-expand-${expand}`}>
-                    Menu
-                  </Offcanvas.Title>
-                </Offcanvas.Header>
-                <Offcanvas.Body>
-                  <hr></hr>
-                  <Nav className="justify-content-end flex-grow-1 pe-3">
-                    <hr></hr>
-                    <br></br>
-                    <Link href="/login" className="text-center btn-hakko2">
-                      <i className="mdi mdi-login"></i>
-                      <br></br>เข้าสู่ระบบ
-                    </Link>
-                    <br></br>
-                    <Link href="/register" className="text-center btn-hakko2">
-                      <i className="mdi mdi-account-plus"></i>
-                      <br></br>สมัครสมาชิก
-                    </Link>
-                  </Nav>
-                  {/* <Form className="d-flex">
-                    <Form.Control
-                      type="search"
-                      placeholder="Search"
-                      className="me-2"
-                      aria-label="Search"
-                    />
-                    <Button variant="outline-success">Search</Button>
-                  </Form> */}
-                </Offcanvas.Body>
-              </Navbar.Offcanvas>
-            </Container>
-          </Navbar>
+          
+          <div className="mx-auto myContainer relative flex flex-col md:flex-row justify-between items-center">
+            <nav className="flex md:h-[80px] text-blue-400 backdrop-blur-md">
+              {/* bg-[#AEDEFC] */}
+              {/* <Navbar
+            key={expand}
+            bg="white"
+            expand={expand}
+            className="flex md:h-[80px] text-blue-400 bg-gray-100/80 backdrop-blur-md"
+          > */}
+              <div class="item-center center justify-center flex text-xl font-semibold transition ease-in hover:drop-shadow-md hover:-translate-y-0.5">
+                <li className="md:p-3 py-1 block hidden md:block">
+                  <img
+                    src="./favicon.ico"
+                    width="60"
+                    height="60"
+                    className="item-center justify-center"
+                    alt="test"
+                  />
+                </li>
+              </div>
+            </nav>
+          </div>
+         
         ))}
       </>
     );
