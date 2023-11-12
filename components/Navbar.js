@@ -92,14 +92,14 @@ export const NavbarComponent = () => {
   });
   if (!Authentication) {
     return (
-      <>
+      
         <Script src="https://code.jquery.com/jquery-3.6.3.min.js" />
         <Script src="https://cdn.jsdelivr.net/npm/sweetalert2@11" />
         {[false].map((expand) => (
           <Navbar key={expand} bg="white" expand={expand} className="align-top">
             <br></br>
             <Container fluid>
-              <Link href="/home">
+              <Link href="/home" style={{ display: "flex", justifyContent: "center", alignItems: "center", minHeight: "100vh" }} >
                 <img
                   src="https://www.kornpitack.ac.th/img/logo.png"
                   width="60"
