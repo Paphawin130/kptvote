@@ -107,15 +107,15 @@ export const NavbarComponent = () => {
             className="flex md:h-[80px] text-blue-400 bg-gray-100/80 backdrop-blur-md"
           > */}
               <div class="item-center center justify-center flex text-xl font-semibold transition ease-in hover:drop-shadow-md hover:-translate-y-0.5">
-                // <li className="md:p-3 py-1 block hidden md:block">
-                  // <img
-                  //   src="./favicon.ico"
-                  //   width="60"
-                  //   height="60"
-                  //   className="item-center justify-center"
-                  //   alt="test"
-                  // />
-                // </li>
+                <li className="md:p-3 py-1 block hidden md:block">
+                  <img
+                    src="https://www.kornpitack.ac.th/img/logo.png"
+                    width="60"
+                    height="60"
+                    className="item-center justify-center"
+                    alt="test"
+                  />
+                </li>
               </div>
             </nav>
           </div>
