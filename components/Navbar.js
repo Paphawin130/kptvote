@@ -108,13 +108,13 @@ export const NavbarComponent = () => {
           > */}
               <div class="item-center center justify-center flex text-xl font-semibold transition ease-in hover:drop-shadow-md hover:-translate-y-0.5">
                 <li className="md:p-3 py-1 block hidden md:block">
-                  <img
-                    src="./favicon.ico"
-                    width="60"
-                    height="60"
-                    className="item-center justify-center"
-                    alt="test"
-                  />
+                  // <img
+                  //   src="./favicon.ico"
+                  //   width="60"
+                  //   height="60"
+                  //   className="item-center justify-center"
+                  //   alt="test"
+                  // />
                 </li>
               </div>
             </nav>
