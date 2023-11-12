@@ -41,7 +41,6 @@ export default function App({ Component, pageProps }) {
         />
       </Head>
       <NavbarComponent />
-      <br></br>
       <Component {...pageProps} />
       <ToastContainer />
       <FooterComponent />
