@@ -28,6 +28,14 @@ function Home(props) {
         ></img>
       </div>
       <br></br>
+      <div  data-aos="fade-down" className="flex rounded-xl overflow-hidden shadow-lg text-sm sm:text-base">
+        <p className="bg-gradient-to-tr from-blue-500 to-blue-300 px-4 py-2 text-white whitespace-nowrap">
+          <span data-aos="fade-down" class="hidden sm:inline-flex">อัพเดต</span>"ข่าวสาร"
+        </p>
+        <marquee data-aos="fade-down" class="bg-white py-2">
+          หากพบปัญหา สามารถแจ้งเข้ามาได้ที่ชมรม Coding หรือหัวหน้าระดับ
+        </marquee>
+      </div>
       <div
         className="carousel-root max-h-[360px] w-full rounded-3xl shadow-lg overflow-hidden mb-6 md:mb-12 hover:cursor-pointer"
         data-aos="fade-down"
@@ -129,24 +137,27 @@ function Home(props) {
             data-aos="fade-up"
             data-aos-duration="800"
           >
-             <div
+            <div
               className="grid pt-3  justify-content-center"
               data-aos="zoom-in"
             >
-            <img
-              class="img-fluid rounded-top-lg object-cover" // w-[400px] h-[200px]
-              src="https://images.alphacoders.com/128/thumb-1920-1282982.jpg"
-              alt="card_image"
-              data-aos="fade-up"
-              // width="1000"
-              // height="1000"
-            ></img>
-            <br></br>
-            <br></br>
-            <h1 className="text-3xl font-bold text-black" data-aos="fade-down">
-              Valorant&nbsp;{Topups} คน
-            </h1>
-          </div>
+              <img
+                class="img-fluid rounded-top-lg object-cover" // w-[400px] h-[200px]
+                src="https://images.alphacoders.com/128/thumb-1920-1282982.jpg"
+                alt="card_image"
+                data-aos="fade-up"
+                // width="1000"
+                // height="1000"
+              ></img>
+              <br></br>
+              <br></br>
+              <h1
+                className="text-3xl font-bold text-black"
+                data-aos="fade-down"
+              >
+                Valorant&nbsp;{Topups} คน
+              </h1>
+            </div>
           </div>
         </div>
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 gap-x-4 text-black-500 justify-center text-center pt-7 px-5">
@@ -161,7 +172,7 @@ function Home(props) {
             >
               <img
                 class="img-fluid rounded-top-lg  object-cover"
-                src="https://images.alphacoders.com/128/thumb-1920-1282982.jpg"
+                src="https://xxboxnews.blob.core.windows.net/prod/sites/2/2022/10/OW2-be9287b234afbe7898ac.jpg"
                 alt="card_image"
                 data-aos="fade-up"
                 // width="1000"
@@ -180,24 +191,27 @@ function Home(props) {
             data-aos-duration="800"
           >
             <div
-              className="grid pt-3  justify-content-center"
+              className="grid pt-3 justify-content-center"
               data-aos="zoom-in"
             >
-            <img
-              class="img-fluid rounded-top-lg object-cover" // w-[400px] h-[200px]
-              src="https://images.alphacoders.com/128/thumb-1920-1282982.jpg"
-              alt="card_image"
-              data-aos="fade-up"
-              width="1000"
-              height="1000"
-            ></img>
-            <br></br>
-            <br></br>
-            <h1 className=" text-3xl font-bold text-black" data-aos="fade-down">
-              Valorant&nbsp;{Topups} คน
-            </h1>
+              <img
+                class="img-fluid rounded-top-lg object-cover" // w-[400px] h-[200px]
+                src="https://cdn.oneesports.co.th/cdn-data/sites/3/2023/04/S__3457046.jpg"
+                alt="card_image"
+                data-aos="fade-up"
+                width="1000"
+                height="1000"
+              ></img>
+              <br></br>
+              <br></br>
+              <h1
+                className=" text-3xl font-bold text-black"
+                data-aos="fade-down"
+              >
+                Rov&nbsp;{Topups} คน
+              </h1>
+            </div>
           </div>
-        </div>
         </div>
       </div>
       <br></br>
