@@ -1,41 +1,61 @@
 package main
 
 import (
+	"context"
 	"fmt"
+	"os"
+	"time"
 
-	"github.com/valyala/fasthttp"
+	"github.com/gofiber/fiber/v2"
+	"github.com/joho/godotenv"
+	"go.mongodb.org/mongo-driver/bson/primitive"
+	"go.mongodb.org/mongo-driver/mongo"
+	"go.mongodb.org/mongo-driver/mongo/options"
 )
 
-func main() {
-	fmt.Println("Starting...")
-	err := fasthttp.ListenAndServe(":8081", fasthttp.CompressHandler(func(ctx *fasthttp.RequestCtx) {
-		switch string(ctx.Path()) {
-		case "/":
-			fmt.Fprintf(ctx, "INDEX")
-		case "/stats":
-			APIstats(ctx)
-		default:
-			ctx.SetStatusCode(404)
-			fmt.Fprintf(ctx, "NOT FOUND")
-		}
-	}))
+var collection *mongo.Collection
+var ctx = context.TODO()
+
+type Games struct {
+	ID primitive.ObjectID `bson:"_id"`
+
+	Title       string `bson:"Title"`
+	Description string `bson:"Description"`
+	Count       int32  `bson:"Count"`
+	CanVote     int32  `bson:"CanVote"`
+
+	CreatedAt time.Time `bson:"Created_at"`
+	UpdatedAt time.Time `bson:"Updated_at"`
+}
+
+func CheckError(err error) {
 	if err != nil {
 		panic(err)
 	}
 }
 
-func APIstats(ctx *fasthttp.RequestCtx) {
-	fmt.Fprintf(ctx, "Hello, world!\n\n")
-	// ctx.SetContentType("text/plain;charset=utf8")
-	fmt.Fprintf(ctx, "Request method is %q\n", ctx.Method())
-	fmt.Fprintf(ctx, "RequestURI is %q\n", ctx.RequestURI())
-	fmt.Fprintf(ctx, "Requested path is %q\n", ctx.Path())
-	fmt.Fprintf(ctx, "Host is %q\n", ctx.Host())
-	fmt.Fprintf(ctx, "Query string is %q\n", ctx.QueryArgs())
-	fmt.Fprintf(ctx, "User-Agent is %q\n", ctx.UserAgent())
-	fmt.Fprintf(ctx, "Connection has been established at %s\n", ctx.ConnTime())
-	fmt.Fprintf(ctx, "Request has been started at %s\n", ctx.Time())
-	fmt.Fprintf(ctx, "Serial request number for the current connection is %d\n", ctx.ConnRequestNum())
-	fmt.Fprintf(ctx, "Your ip is %q\n\n", ctx.RemoteIP())
+func main() {
+	// Read Config
+	godotenv.Load(".env")
+	// database
+	fmt.Println("Connecting To Database")
+	client, err := mongo.Connect(ctx, options.Client().ApplyURI(os.Getenv("MONGODB")))
+	CheckError(err)
+	CheckError(client.Ping(ctx, nil))
+	// collection = client.Database("kpt").Collection("vote")
 
+	// webserver
+	fmt.Println("Starting Web Server")
+	app := fiber.New(fiber.Config{
+		StrictRouting: true,
+		ServerHeader:  "Fiber",
+		AppName:       "KPT Vote Server",
+	})
+	app.Get("/", func(c *fiber.Ctx) error {
+		return c.SendString("INDEX")
+	})
+	app.Get("/stats", func(c *fiber.Ctx) error {
+		return c.SendString("stats")
+	})
+	CheckError(app.Listen(os.Getenv("IPPORT")))
 }
