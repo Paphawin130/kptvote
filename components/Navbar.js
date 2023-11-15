@@ -96,9 +96,17 @@ export const NavbarComponent = () => {
         <Script src="https://code.jquery.com/jquery-3.6.3.min.js" />
         <Script src="https://cdn.jsdelivr.net/npm/sweetalert2@11" />
         {[false].map((expand) => (
-          
-          <div className="mx-auto myContainer relative flex flex-col md:flex-row justify-between items-center">
-            <nav className="flex md:h-[80px] text-blue-400 backdrop-blur-md">
+          <Navbar
+            key={expand}
+            bg="[#AEDEFC]"
+            expand={expand}
+            data-aos="fade-down"
+            lassName="mb-3 rounded-top-lg border-radius-10"
+          >
+            <div
+              data-aos="fade-down"
+              className="mx-auto myContainer relative flex flex-col md:flex-row justify-between items-center"
+            >
               {/* bg-[#AEDEFC] */}
               {/* <Navbar
             key={expand}
@@ -107,19 +115,32 @@ export const NavbarComponent = () => {
             className="flex md:h-[80px] text-blue-400 bg-gray-100/80 backdrop-blur-md"
           > */}
               <div class="item-center center justify-center flex text-xl font-semibold transition ease-in hover:drop-shadow-md hover:-translate-y-0.5">
-                <li className="md:p-3 py-1 block hidden md:block">
-                  <img
-                    src="https://www.kornpitack.ac.th/img/logo.png"
-                    width="60"
-                    height="60"
-                    className="item-center justify-center"
-                    alt="test"
-                  />
+                <li className="md:p-4 py-2 md:block">
+                  <Link
+                    href="/home"
+                    className="router-link-active router-link-exact-active"
+                  >
+                    <img
+                      src="https://www.kornpitack.ac.th/img/logo.png"
+                      width="65"
+                      height="65"
+                      className="item-center justify-center"
+                      alt="test"
+                    />
+                  </Link>
                 </li>
               </div>
-            </nav>
-          </div>
-         
+            </div>
+            <div className="">
+              <Link
+                href="/login"
+                className="bg-gradient-to-t from-pink-500 to-pink-300 text-white p-2 rounded-md shadow-md transition duration-300 hover:-translate-y-1 hover:shadow-lg"
+              >
+                <i className="0 mdi mdi-login"></i>
+                {""} เข้าสู่ระบบ{""}
+              </Link>     {""}
+            </div>     {""}
+          </Navbar>
         ))}
       </>
     );
