@@ -28,16 +28,17 @@ function Home(props) {
         ></img>
       </div>
   <br></br>
-      <div
-        data-aos="fade-down"
-        className="w-full flex rounded-xl overflow-hidden shadow-lg text-sm sm:text-base"
-      >
-        <p className="bg-gradient-to-tr from-blue-500 to-blue-300 px-4 py-2 text-white whitespace-nowrap">
-          <span data-aos="fade-down" class="hidden sm:inline-flex">
-            อัพเดต
-          </span>
-          ข่าวสาร
-        </p>
+   //   <div
+
+    //    data-aos="fade-down"
+     //   className="w-full flex rounded-xl overflow-hidden shadow-lg text-sm sm:text-base"
+     // >
+        //<p className="bg-gradient-to-tr from-blue-500 to-blue-300 px-4 py-2 text-white whitespace-nowrap">
+          //<span data-aos="fade-down" class="hidden sm:inline-flex">
+          //  อัพเดต
+       //   </span>
+       //   ข่าวสาร
+       // </p>
       //  <marquee data-aos="fade-down" class="bg-white py-2">
        //   หากพบปัญหา สามารถแจ้งเข้ามาได้ที่ชมรม Coding หรือหัวหน้าระดับ
       //  </marquee>
