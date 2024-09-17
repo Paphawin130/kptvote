@@ -32,7 +32,7 @@ function Home(props) {
 
     //    data-aos="fade-down"
      //   className="w-full flex rounded-xl overflow-hidden shadow-lg text-sm sm:text-base"
-     // >
+     // 
         //<p className="bg-gradient-to-tr from-blue-500 to-blue-300 px-4 py-2 text-white whitespace-nowrap">
           //<span data-aos="fade-down" class="hidden sm:inline-flex">
           //  อัพเดต
