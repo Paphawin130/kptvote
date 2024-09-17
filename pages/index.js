@@ -30,10 +30,10 @@ function Home(props) {
   <br></br>
     <div>
 
-    //    data-aos="fade-down"
-     //   className="w-full flex rounded-xl overflow-hidden shadow-lg text-sm sm:text-base"
-     // 
-        //<p className="bg-gradient-to-tr from-blue-500 to-blue-300 px-4 py-2 text-white whitespace-nowrap">
+           {/*    data-aos="fade-down"
+        className="w-full flex rounded-xl overflow-hidden shadow-lg text-sm sm:text-base"
+     // ll
+      //<p className="bg-gradient-to-tr from-blue-500 to-blue-300 px-4 py-2 text-white whitespace-nowrap">
           //<span data-aos="fade-down" class="hidden sm:inline-flex">
           //  อัพเดต
        //   </span>
@@ -41,7 +41,7 @@ function Home(props) {
        // </p>
       //  <marquee data-aos="fade-down" class="bg-white py-2">
        //   หากพบปัญหา สามารถแจ้งเข้ามาได้ที่ชมรม Coding หรือหัวหน้าระดับ
-      //  </marquee>
+      //  </marquee>*/}
      </div>
       <div
         className="carousel-root max-h-[360px] w-full rounded-3xl shadow-lg overflow-hidden mb-6 md:mb-12 hover:cursor-pointer"
