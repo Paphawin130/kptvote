@@ -42,7 +42,7 @@ function Home(props) {
       //  <marquee data-aos="fade-down" class="bg-white py-2">
        //   หากพบปัญหา สามารถแจ้งเข้ามาได้ที่ชมรม Coding หรือหัวหน้าระดับ
       //  </marquee>
-      </div>
+     // </div>
       <div
         className="carousel-root max-h-[360px] w-full rounded-3xl shadow-lg overflow-hidden mb-6 md:mb-12 hover:cursor-pointer"
         data-aos="fade-down"
