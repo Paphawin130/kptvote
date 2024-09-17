@@ -186,7 +186,7 @@ export const NavbarComponent = () => {
                         🙍‍♂️ชื่อผู้ใช้งาน: <Badge bg="success">{Username}</Badge>
                       </h6>
                       <h6>
-                        💰พ้อยท์: <Badge bg="success">{Point} ₱</Badge>
+                        💰จำนวน: <Badge bg="success">{Point} ₱</Badge>
                       </h6>
                       <h6>
                         🔴สถานะ: <Badge bg="success">{Rank}</Badge>
@@ -232,14 +232,14 @@ export const NavbarComponent = () => {
                         href="/shop"
                         className="border-2 border-green-500 text-center btn-hakko2"
                       >
-                        🛒<br></br>ร้านค้า
+                        🛒<br></br>Vote
                       </Link>
                       <br></br>
                       <Link
                         href="/topup"
                         className="border-2 border-green-500 text-center btn-hakko2"
                       >
-                        💰<br></br>เติมเงิน
+                        💰<br></br>
                       </Link>
                       <br></br>
                       <Link
